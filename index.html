@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h3>Xây dựng mảng</h3>
+        <div class="form-group">
+            <input type="number" class="form-control w-50" style="display:inline-block" placeholder="Nhập số n"
+                id="phanTu">
+            <button class="btn btn-success rounded-pill ml-4 py-2 px-5" id="themPhanTu">Thêm số</button>
+        </div>
+        <div class="alert alert-success mt-2" id="mang"></div>
+        <h3>Bài tập 1: Tính tổng số dương trong mảng</h3>
+        <button class="btn btn-success mt-2 rounded-pill px-5 py-2" id="btnTinhTong">Tính Tổng</button>
+        <div class="alert alert-success mt-2" id="ketQuaB1" style="padding-top: 1rem;padding-bottom: 1rem;"></div>
+        <h3>Bài tập 2: Đếm số dương trong mảng</h3>
+        <button class="btn btn-success mt-2 rounded-pill px-5 py-2" id="btnDemSo">Đếm Số</button>
+        <div class="alert alert-success mt-2" id="ketQuaB2" style="padding-top: 1rem;padding-bottom: 1rem;"></div>
+        <h3>Bài tập 3: Tìm số nhỏ nhất trong mảng</h3>
+        <button class="btn btn-success rounded-pill py-2 px-5 mt-2" id="btnSoNhoNhat">Tìm Số Nhỏ Nhất</button>
+        <div class="alert alert-success mt-2" id="ketQuaB3" style="padding-top: 1rem;padding-bottom: 1rem;"></div>
+        <h3>Bài tập 4: Tìm số dương nhỏ nhất trong mảng</h3>
+        <button class="btn btn-success rounded-pill px-5 py-2 mt-2" id="btnSoDuongNhoNhat">Tìm Số Dương Nhỏ
+            Nhất</button>
+        <div class="alert alert-success mt-2" id="ketQuaB4" style="padding-top: 1rem;padding-bottom: 1rem;"></div>
+        <h3>Bài tập 5: Tìm số chẵn cuối cùng trong mảng</h3>
+        <button class="btn btn-success rounded-pill px-5 py-2 mt-2" id="btnSoChanCuoiCung">Tìm số chẵn cuối
+            cùng</button>
+        <div class="alert alert-success mt-2" id="ketQuaB5" style="padding-top: 1rem;padding-bottom: 1rem;"></div>
+        <h3>Bài tập 6: Đổi chỗ phần tử trong mảng</h3>
+        <div class="form-group row">
+            <div class="col-5">
+                <input type="number" class="form-control mt-2" placeholder="Nhập số vị trí x" id="soThuTuX" />
+            </div>
+            <div class="col-5">
+                <input type="number" class="form-control mt-2" placeholder="Nhập số vị trí y" id="soThuTuY" />
+            </div>
+        </div>
+        <button class="btn btn-success mt-2 rounded-pill px-4 py-2" id="btnDoiCho">Đổi Chỗ</button>
+        <div class="alert alert-success mt-2" id="ketQuaB6" style="padding-top: 1rem;padding-bottom: 1rem;"></div>
+        <h3>Bài tập 7: Sắp xếp tăng dần</h3>
+        <button class="btn btn-success mt-2 py-2 px-4 rounded-pill" id="btnSapXep">Sắp Xếp</button>
+        <div class="alert alert-success mt-2" id="ketQuaB7" style="padding-top: 1rem;padding-bottom: 1rem;"></div>
+        <h3>Bài tập 8: Tìm số nguyên tố đầu tiên trong mảng</h3>
+        <button class="btn btn-success mt-2 rounded-pill py-2 px-5" id="btnTimSoNguyen">Tìm Số Nguyên</button>
+        <div class="alert alert-success mt-2" id="ketQuaB8" style="padding-top: 1rem;padding-bottom: 1rem;"></div>
+        <h3>Bài tập 9: Nhập thêm 1 mảng số thực. Tìm bao nhiêu số nguyên trong đó</h3>
+        <div class="form-group">
+            <input class="form-control w-50" placeholder="Nhập số" id="nhapSo" style="display:inline-block">
+            <button class="btn btn-success py-2 px-3 rounded-pill" id="btnNhapSoB9">Thêm số</button>
+        </div>
+        <div class="alert alert-success mt-2" id="mangMoi" style="padding-top: 1rem;padding-bottom: 1rem;"></div>
+        <button class="mt-2 btn btn-success rounded-pill py-2 " id="btnDemSoNguyen">Đếm số nguyên</button>
+        <div class="alert alert-success mt-2" id="ketQuaB9" style="padding-top: 1rem;padding-bottom: 1rem;"></div>
+        <h3>Bài tập 10: So sánh số lượng số âm và số dương của mảng đầu bài</h3>
+        <button class="btn btn-success mt-2 rounded-pill py-2 px-4" id="btnSoSanh">So sánh</button>
+        <div class="alert alert-success mt-2" style="padding-top: 1rem;padding-bottom: 1rem;" id="ketQuaB10"></div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
